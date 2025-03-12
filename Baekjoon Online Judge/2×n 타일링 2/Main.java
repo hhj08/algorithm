@@ -1,10 +1,11 @@
-import java.io.*;
+import java.util.*;
+
 //https://girawhale.tistory.com/34 참고
 class Main {
-    public static void main(String[] args) throws IOException {
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        int n = Integer.parseInt(br.readLine());
-        int[] dp = new int[n+1];
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int[] dp = new int[1001];
         dp[1] = 1;
         dp[2] = 3;
         for (int i = 3; i <= n; i++)
